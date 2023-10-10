@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 16</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #262626;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            width: 600px;
+            background: #404040;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin: 1rem 0rem;
+        }
+
+        p span {
+            display: inline-block;
+            padding: 0.125rem;
+            background-color: #262626;
+        }
+
+        /* Defining color using keywords */
+        p.kw {
+            /* black */
+            color: black;
+            /* rebeccapurple */
+            color: rebeccapurple;
+            /* chartreuse */
+            color: chartreuse;
+            /* crimson */
+            color: crimson;
+            /* yellowgreen */
+            color: yellowgreen;
+        }
+
+        /* Defining color using hexadecimal notation */
+        p.hexa {
+            /* black */
+            color: #000;
+            /* red */
+            /* Same as #f00 */
+            color: #ff0000;
+            /* green with transparency */
+            /* Here 90 represent the opacity */
+            color: #00ff0070;
+
+        }
+
+        /* Defining color using the rgb functional notation */
+        p.rgb {
+            /* red */
+            color: rgb(255, 0, 0);
+            /* blue with 0.5 opacity*/
+            color: rgba(0, 0, 255, 0.5);
+            /* yellow which is made of green and red */
+            color: rgb(255, 255, 0);
+            /* Purple which is made of red and blue */
+            color: rgba(255, 0, 255, 1);
+        }
+
+        /* Defining color using hsl notation */
+        p.hsl {
+            /* red */
+            color: hsl(0deg, 100%, 50%);
+            /* blue */
+            color: hsl(240deg, 100%, 50%);
+            /* orange */
+            color: hsl(27deg, 100%, 50%);
+            /* Green with 0.5 opacity */
+            color: hsla(120deg, 100%, 50%, 50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Keywords</h3>
+        <p class="kw">
+            Defining color using keywords <span>yellowgreen</span>
+        </p>
+        <h3>Hexadecimal</h3>
+        <p class="hexa">
+            Hexadecimal notation <span>#00ff0070</span>
+        </p>
+        <h3>RGB Function</h3>
+        <p class="rgb">
+            Rgb functional notation <span>rgba(255, 0, 255, 1)</span>
+        </p>
+        <h3>HSL Function</h3>
+        <p class="hsl">
+            hsl function notation <span>hsla(120deg, 100%, 50%, 50%)</span>
+        </p>
+    </div>
+</body>
+
+</html>
